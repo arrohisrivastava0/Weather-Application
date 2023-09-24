@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pcitem1"
+        android:title="Millimetres - mm" />
+    <item
+        android:id="@+id/pcitem2"
+        android:title="Inches - in" />
+</menu>

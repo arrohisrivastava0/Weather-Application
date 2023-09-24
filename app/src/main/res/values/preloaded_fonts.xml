@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_sc</item>
+        <item>@font/alegreya_sans_sc_light</item>
+        <item>@font/brawler</item>
+        <item>@font/brygada_1918_medium</item>
+        <item>@font/dm_sans</item>
+        <item>@font/droid_serif</item>
+        <item>@font/droid_serif_bold</item>
+        <item>@font/nobile</item>
+        <item>@font/quicksand_medium</item>
+        <item>@font/rubik</item>
+        <item>@font/spectral</item>
+        <item>@font/spectral_extralight</item>
+        <item>@font/spectral_light</item>
+        <item>@font/spectral_medium</item>
+    </array>
+</resources>

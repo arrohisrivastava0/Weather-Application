@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/textColorPrimaryInverseNoDisable">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_arrow_white"
+                    android:layout_gravity="center"
+                    android:paddingEnd="10dp"
+                    android:onClick="goBack"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="25dp"
+                    android:textColor="?attr/actionMenuTextColor"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/TempOpt"
+                android:clickable="true"
+                android:onClick="temperature"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Temperature"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/temperatureUnitTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Celsius - °c"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/WindOpt"
+                android:layout_gravity="fill_vertical"
+                android:clickable="true"
+                android:onClick="wind"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wind"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/windUnitTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kilometres per hour - km/h"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/PrecipitationOpt"
+                android:layout_gravity="fill_vertical"
+                android:clickable="true"
+                android:onClick="precipitation"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precipitation"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/precipitationUnitTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Millimetres - mm"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/VisibilityOpt"
+                android:layout_gravity="fill_vertical"
+                android:clickable="true"
+                android:onClick="visibility"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/visibilityUnitTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kilometres - km"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/PressureOpt"
+                android:layout_gravity="fill_vertical"
+                android:clickable="true"
+                android:onClick="pressure"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/pressureUnitTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Millibar - mb"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

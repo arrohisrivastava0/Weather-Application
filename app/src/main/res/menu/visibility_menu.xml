@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vitem1"
+        android:title="Kilometres - km" />
+    <item
+        android:id="@+id/vitem2"
+        android:title="Miles - mi" />
+</menu>
