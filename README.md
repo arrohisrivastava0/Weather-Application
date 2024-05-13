@@ -20,6 +20,12 @@ A Java based Android application which fetches real time weather forecast data f
 
 ## Project setup 
 
+### Libraries Used
+- [Volley](https://developer.android.com/training/volley) - for network requests
+- [Picasso](https://square.github.io/picasso/) - for image loading and caching
+- [Retrofit](https://square.github.io/retrofit/) - a type-safe HTTP client for Android and Java.
+
+
 ### Android Manifest
 Add the following permissions in your AndroidManifest.xml file.
 
@@ -41,30 +47,24 @@ Or you can work with the [icons](https://github.com/arrohisrivastava0/Weather-Ap
 ### Main Activity UI
 Refer to the XML file for the UI given [here](https://github.com/arrohisrivastava0/Weather-Application/blob/master/app/src/main/res/layout/activity_main.xml)
 
-### Weather API
-Refer to the base URL for the API used in this project.
+## Weather API
++ We are using [Weather Api](https://www.weatherapi.com/) for this.
+
+### Steps
++ You need to [signup](https://www.weatherapi.com/signup.aspx) and then you can find your API key under your account, and start using API right away!
++ Try the weather API by using interactive API Explorer or use Swagger Tool.
++ Alternatively you can find the SDK for popular framework/languages available on Github for quick integrations.
++ Refer to the documentations for the detailed steps [here](https://www.weatherapi.com/docs/)
+
++ Given below is the base URL used in the project
   ```java
     String url1="https://api.weatherapi.com/v1/forecast.json?key=<YOUR_KEY>&q="+cityName+"&days=15&aqi=yes&alerts=yes";
   ```
+### The Weather API provides the following weather data for any geographical coordinates:
++ Current temperature (current, min and max), feels-like temperature, rain chance, humidity, precipitation, wind speed, visibility, UV and pressure.
++ Current weather condition (short and detailed).
++ Weather condition icon.
++ Hourly forecast for 24 hours.
++ Daily forecast for 15 days.
++ Sunrise and sunset time.
 
-
-### Fetching the weather data from the API
-
-```java
-private void getWeatherInfo(String cityName){
-
-  String url1="<BASE_URL>
-  cityNameTV.setText(cityName);
-
-  RequestQueue requestQueue= Volley.newRequestQueue(MainActivity.this);
-
-  JsonObjectRequest jsonObjectRequest1=new JsonObjectRequest(Request.Method.GET, url1, null, new Response.Listener<JSONObject>() {
-
-    public void onResponse(JSONObject response) {
-      //handled on response operations
-    }
-
-  }
-
-}
-```
