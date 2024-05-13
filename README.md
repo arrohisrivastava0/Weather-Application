@@ -5,6 +5,7 @@ A Java based Android application which fetches real time weather forecast data f
   <img src="https://github.com/arrohisrivastava0/Weather-Application/blob/master/images/weatherApp_ss1.jpg" width="300">
   <img src="https://github.com/arrohisrivastava0/Weather-Application/blob/master/images/weatherApp_ss2.jpg" width="300">
   <img src="https://github.com/arrohisrivastava0/Weather-Application/blob/master/images/weatherApp_ss3.jpg" width="300">
+  <img src="https://github.com/arrohisrivastava0/Weather-Application/blob/master/images/weatherApp_ss4.jpg" width="300">
 </p>
 
 ## Installation
